@@ -14,6 +14,8 @@ The principal objectif is to cluster the rail image according to their path anno
 
 [optimisation_pca_ego_path](/optimisation_pca_ego_path.ipynb) : Finally, the metrics silhouette_score is choosen for the method KMeans. This metrics seems to present the best the forme of the rails. A process of optimisation is done by the grid_serach of the combination of PCA + Kmeans. The results are shown in the notebook. The curvs to left and right are well separated. And the two parts are symetrically situated, have allmost the same forms. The direct line are seperated to two clusters, this is because the directe ligne is usually accompanyed by a curve to left or right. And the rails points may rather concentered to the left of part of the image, this bias the separation.  
 
-![](/figures/clustering_pca.png)
+<img src="figures/PCA_KMeans.png" width="400">
+
+<img src="figures/clustering_pca.png" width="500">
 
 [optimisation_tsne_ego_path](/optimisation_tsne_ego_path.ipynb) : The same thing is done with t-SNE + KMeans. But the result is not good as the PCA + KMeans.
